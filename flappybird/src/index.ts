@@ -1,6 +1,6 @@
 import 'phaser';
-import { BootScene } from './flappybird/bootScene';
-import { GameScene } from './flappybird/gameScene';
+import { BootScene } from './bootScene';
+import { GameScene } from './gameScene';
 
 const config: GameConfig = {
   width: 800,
