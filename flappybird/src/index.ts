@@ -1,6 +1,6 @@
 import "phaser";
 import { BootScene } from "./bootScene";
-import { MainMenuScene } from "./mainMenuScene";
+import { MenuScene } from "./menuScene";
 import { GameScene } from "./gameScene";
 
 const config: GameConfig = {
@@ -12,7 +12,7 @@ const config: GameConfig = {
     zoom: 1,
     type: Phaser.AUTO,
     parent: "game",
-    scene: [BootScene, MainMenuScene, GameScene],
+    scene: [BootScene, MenuScene, GameScene],
     input: {
         keyboard: true,
         mouse: false,

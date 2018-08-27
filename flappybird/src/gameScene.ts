@@ -130,6 +130,6 @@ export class GameScene extends Phaser.Scene {
     }
 
     private restartGame(): void {
-        this.scene.start("MainMenuScene");
+        this.scene.start("MenuScene");
     }
 }
