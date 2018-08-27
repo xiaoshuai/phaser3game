@@ -13,9 +13,9 @@ export class Bird extends Phaser.GameObjects.Sprite {
         // physics
         params.scene.physics.world.enable(this);
         if (this.body instanceof Phaser.Physics.Arcade.Body) {
-                    this.body.setGravityY(1000);
-                    this.body.setSize(17, 12);
-            }
+            this.body.setGravityY(1000);
+            this.body.setSize(17, 12);
+        }
 
         // animations & tweens
         this.anim = [];
@@ -50,10 +50,10 @@ export class Bird extends Phaser.GameObjects.Sprite {
     }
 
     public flap(): void {
-            if (this.body instanceof Phaser.Physics.Arcade.Body) {
-                    this.body.setVelocityY(-350);
-            }
-            this.anim[0].restart();
+        if (this.body instanceof Phaser.Physics.Arcade.Body) {
+            this.body.setVelocityY(-350);
+        }
+        this.anim[0].restart();
     }
 
     private handleAngleChange(): void {
