@@ -1,16 +1,16 @@
-import 'phaser';
-import { BootScene } from './bootScene';
-import { GameScene } from './gameScene';
+import "phaser";
+import { BootScene } from "./bootScene";
+import { GameScene } from "./gameScene";
 
 const config: GameConfig = {
-  width: 800,
-  height: 600,
-  type: Phaser.AUTO,
-  parent: 'virtual-pet',
-  scene: [BootScene, GameScene],
-  backgroundColor: "#000000"
+    backgroundColor: "#000000",
+    height: 600,
+    parent: "virtual-pet",
+    scene: [BootScene, GameScene],
+    type: Phaser.AUTO,
+    width: 800,
 };
 
 window.onload = () => {
-  var game = new Phaser.Game(config);
+    const game = new Phaser.Game(config);
 };

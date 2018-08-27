@@ -1,26 +1,26 @@
 export class GameScene extends Phaser.Scene {
-  constructor() {
-    super({
-      key: 'GameScene'
-    });
-  }
-  init(): void {
-  }
+    constructor() {
+        super({
+            key: "GameScene",
+        });
+    }
+    public init(): void {
+    }
 
-  preload(): void {
-    this.load.image('logo', 'assets/logo.png');
-  }
+    public preload(): void {
+        this.load.image("logo", "assets/logo.png");
+    }
 
-  create(): void {
-    var logo = this.add.image(400, 150, 'logo');
+    public create(): void {
+        const logo = this.add.image(400, 150, "logo");
 
-    this.tweens.add({
-      targets: logo,
-      y: 450,
-      duration: 2000,
-      ease: 'Power2',
-      yoyo: true,
-      loop: -1
-    });
-  }
-};
+        this.tweens.add({
+            duration: 2000,
+            ease: "Power2",
+            loop: -1,
+            targets: logo,
+            y: 450,
+            yoyo: true,
+        });
+    }
+}
