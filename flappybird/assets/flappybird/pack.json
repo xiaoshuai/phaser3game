@@ -1,0 +1,31 @@
+{
+  "preload": {
+    "files": [
+      {
+        "type": "bitmapFont",
+        "key": "flappyBirdFont",
+        "textureURL": "assets/flappybird/font/font.png",
+        "fontDataURL": "assets/flappybird/font/font.fnt"
+      },
+      {
+        "type": "image",
+        "key": "background",
+        "url": "assets/flappybird/other/bg.png"
+      },
+      {
+        "type": "image",
+        "key": "bird",
+        "url": "assets/flappybird/sprites/bird.png"
+      },
+      {
+        "type": "spritesheet",
+        "key": "pipe",
+        "url": "assets/flappybird/sprites/pipe.png",
+        "frameConfig": {
+          "frameWidth": 20,
+          "frameHeight": 20
+        }
+      }
+    ]
+  }
+}

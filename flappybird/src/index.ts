@@ -1,13 +1,13 @@
 import 'phaser';
-import { BootScene } from './bootScene';
-import { PetScene } from './petScene';
+import { BootScene } from './flappybird/bootScene';
+import { GameScene } from './flappybird/gameScene';
 
 const config: GameConfig = {
   width: 800,
   height: 600,
   type: Phaser.AUTO,
   parent: 'virtual-pet',
-  scene: [BootScene, PetScene],
+  scene: [BootScene, GameScene],
   backgroundColor: "#000000"
 };
 
